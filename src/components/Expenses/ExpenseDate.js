@@ -1,6 +1,6 @@
 import "./ExpenseDate.css";
 
-function ExpenseDate(props) {
+const ExpenseDate = (props) => {
   return (
     <div className="expense-date">
       <div className="expense-date__month">{props.month}</div>
@@ -8,6 +8,6 @@ function ExpenseDate(props) {
       <div className="expense-date__day">{props.day}</div>
     </div>
   );
-}
+};
 
 export default ExpenseDate;

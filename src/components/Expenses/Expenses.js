@@ -1,9 +1,10 @@
 import ExpenseItem from "./ExpenseItem";
-import './Expenses.css';
+import Card from "../UI/Card";
+import "./Expenses.css";
 
-function Expenses(props) {
+const Expenses = (props) => {
   return (
-    <div className="expenses">
+    <Card className="expenses">
       <ExpenseItem
         title={props.items[0].title}
         price={props.items[0].amount}
@@ -32,8 +33,8 @@ function Expenses(props) {
         day={props.items[3].date.toLocaleString("en-US", { day: "2-digit" })}
         year={props.items[3].date.getFullYear()}
       />
-    </div>
+    </Card>
   );
-}
+};
 
 export default Expenses;
